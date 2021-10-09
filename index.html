@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+    <title>CHAT ROOM</title>
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="index.css"/>
+    <script src="/xxxxx/b4j_ws.js"></script>
+ </head>
+ <body >
+	<h1>LOGIN</h1>
+	<div id="main_fields">
+        <form>
+        Enter your Company Name: <input id="username" type="text"></input>
+        <button type="submit" id="enter">sign in</button>
+        </form>
+     </div>
+     
+	<script>
+	$( document ).ready(function() {
+        b4j_connect("/login");
+    });
+    </script>
+   
+
+ </body>
